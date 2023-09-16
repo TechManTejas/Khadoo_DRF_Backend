@@ -31,6 +31,12 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+# Arrage this according to 
+PROJECT_APPS = [
+    'tag',
+    'currency'
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,9 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
-    'user'
-]
+    'corsheaders'
+] + PROJECT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
